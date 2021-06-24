@@ -90,9 +90,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Scr\Accessibility.Android\Accessibility.Android.csproj">
+    <ProjectReference Include="..\..\Scr\Accessibility.Android\Accessibility.Droid.csproj">
       <Project>{837f2a4d-7a56-4b08-9cc5-8d9dd75a577f}</Project>
-      <Name>Accessibility.Android</Name>
+      <Name>Accessibility.Droid</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Scr\Accessibility\Accessibility.csproj">
       <Project>{8033b337-be56-4304-83a4-1fa45e2fbbb1}</Project>

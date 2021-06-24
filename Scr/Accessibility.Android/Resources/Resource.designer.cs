@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("StateButton.Android.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Accessibility.Droid.Resource", IsApplication=false)]
 
-namespace StateButton.Android
+namespace Accessibility.Droid
 {
 	
 	

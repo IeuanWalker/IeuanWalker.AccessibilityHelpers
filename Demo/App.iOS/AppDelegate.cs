@@ -24,7 +24,7 @@ namespace App.iOS
             Forms.Init();
             LoadApplication(new App());
 
-            Initialise.Init();
+            Initializer.Init();
 
             return base.FinishedLaunching(app, options);
         }

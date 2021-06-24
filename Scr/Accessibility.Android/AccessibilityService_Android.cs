@@ -1,7 +1,7 @@
 ﻿using Accessibility.Droid;
-using Android.Views.Accessibility;
-using Xamarin.Forms; 
 using Android.Content;
+using Android.Views.Accessibility;
+using Xamarin.Forms;
 
 [assembly: Dependency(typeof(AccessibilityService_Android))]
 namespace Accessibility.Droid
@@ -14,6 +14,7 @@ namespace Accessibility.Droid
 
             view?.SendAccessibilityEvent(EventTypes.ViewAccessibilityFocused);
         }
+
         public void SetControlType(VisualElement element, ControlType controlType)
         {
             var view = element.GetViewForAccessibility();
@@ -27,7 +28,7 @@ namespace Accessibility.Droid
                 view.SetAccessibilityDelegate(new MyAccessibilityDelegate(controlType));
         }
 
-        class MyAccessibilityDelegate :  Android.Views.View.AccessibilityDelegate
+        private class MyAccessibilityDelegate : Android.Views.View.AccessibilityDelegate
         {
             private readonly ControlType controlType;
 
@@ -57,7 +58,6 @@ namespace Accessibility.Droid
 
             if (!(manager.IsEnabled || manager.IsTouchExplorationEnabled))
                 return;
-
 
             // Sends the accessibility event to announce.
             AccessibilityEvent e = AccessibilityEvent.Obtain();

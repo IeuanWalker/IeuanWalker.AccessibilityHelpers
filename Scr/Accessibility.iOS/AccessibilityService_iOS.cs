@@ -1,8 +1,8 @@
-﻿using Xamarin.Forms;
-using UIKit;
-using Xamarin.Forms.Platform.iOS;
-using Accessibility.iOS;
+﻿using Accessibility.iOS;
 using Foundation;
+using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 
 [assembly: Dependency(typeof(AccessibilityService_iOS))]
 namespace Accessibility.iOS
@@ -24,6 +24,7 @@ namespace Accessibility.iOS
                 case ControlType.Button:
                     nativeView.AccessibilityTraits = UIAccessibilityTrait.Button;
                     break;
+
                 case ControlType.Default:
                     nativeView.AccessibilityTraits = UIAccessibilityTrait.None;
                     break;

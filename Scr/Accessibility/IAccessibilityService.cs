@@ -10,7 +10,6 @@ namespace Accessibility
         /// <param name="element"></param>
         void SetFocus(VisualElement element);
 
-
         /// <summary>
         /// Tell an element to parade around as a different element
         /// </summary>
@@ -23,7 +22,6 @@ namespace Accessibility
         /// </summary>
         /// <param name="text"></param>
         void Announcement(string text);
-
     }
 
     public enum ControlType

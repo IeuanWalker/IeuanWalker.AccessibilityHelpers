@@ -23,7 +23,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{1C19C13A-11D6-46E9-B226-FED95D9CD305}"
 	ProjectSection(SolutionItems) = preProject
 		NuGet\IeuanWalker.AccessibilityHelpers.nuspec = NuGet\IeuanWalker.AccessibilityHelpers.nuspec
-		NuGet\logo.jpg = NuGet\logo.jpg
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{32F2A375-0F05-4CFF-AF2F-DF86AB7C7C2B}"
@@ -34,7 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{32F2A375-0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accessibility", "Scr\Accessibility\Accessibility.csproj", "{8033B337-BE56-4304-83A4-1FA45E2FBBB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accessibility.Android", "Scr\Accessibility.Android\Accessibility.Android.csproj", "{837F2A4D-7A56-4B08-9CC5-8D9DD75A577F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accessibility.Droid", "Scr\Accessibility.Android\Accessibility.Droid.csproj", "{837F2A4D-7A56-4B08-9CC5-8D9DD75A577F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accessibility.iOS", "Scr\Accessibility.iOS\Accessibility.iOS.csproj", "{43DD689A-3918-43EB-B654-8E1C54F23C72}"
 EndProject
