@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata minClientVersion="">
+    <id>IeuanWalker.AccessibilityHelpers</id>
+    <version>0.0.1-alpha</version>
+    <title>Accessibility helpers for Xamarin.Forms</title>
+    <authors>Ieuan Walker</authors>
+    <owners>Ieuan Walker</owners>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl></projectUrl>
+    <description>Accessibility helpers to access native api's</description>
+    <tags>xamarin.forms xamarin Accessibility TalkBack VoiceOver Announcement Focus </tags>
+    <dependencies>
+      <group>
+        <dependency id="Xamarin.Forms" version="5.0.0.2012" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="logo.jpg" target="" />
+
+    <!-- .NET Standard -->
+    <file src="../Scr/Accessibility/bin/Release/netstandard2.0/Accessibility.dll" target="lib/netstandard1.0" />
+
+    <!-- Core PCL -->
+    <file src="../Scr/Accessibility/bin/Release/netstandard2.0/Accessibility.dll" target="lib/portable-win+net45+wp80+win81+wpa81" />
+
+    <!-- Xamarin.iOS -->
+    <file src="../Scr/Accessibility.iOS/bin/Release/Accessibility.dll" target="lib/xamarinios10" />
+    <file src="../Scr/Accessibility.iOS/bin/Release/Accessibility.iOS.dll" target="lib/xamarinios10" />
+
+    <!-- Xamarin.Android -->
+    <file src="../Scr/Accessibility.Android/bin/Release/Accessibility.dll" target="lib/monoandroid10" />
+    <file src="../Scr/Accessibility.Android/bin/Release/Accessibility.Android.dll" target="lib/monoandroid10" />
+  </files>
+</package>
+
+<!--nuget pack IeuanWalker.StateButton.nuspec -Version 0.0.4-alpha-->
