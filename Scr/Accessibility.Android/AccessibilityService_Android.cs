@@ -52,6 +52,15 @@ namespace Accessibility.Droid
 
         public void Announcement(string text)
         {
+            AccessabilityAnnouncement(text);
+        }
+        public void ForcedAnnouncement(string text)
+        {
+            AccessabilityAnnouncement(text);
+        }
+
+        private void AccessabilityAnnouncement(string text)
+        {
             if (string.IsNullOrEmpty(text)) return;
 
             AccessibilityManager manager = Xamarin.Essentials.Platform.AppContext?.GetSystemService(Context.AccessibilityService) as AccessibilityManager;

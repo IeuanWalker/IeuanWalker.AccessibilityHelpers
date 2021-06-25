@@ -40,5 +40,15 @@ namespace Accessibility.iOS
 
             UIAccessibility.PostNotification(UIAccessibilityPostNotification.Announcement, new NSString(text));
         }
+
+        public void ForcedAnnouncement(string text)
+        {
+            if (string.IsNullOrEmpty(text)) return;
+
+            if (!UIAccessibility.IsVoiceOverRunning)
+                return;
+
+            UIAccessibility.PostNotification(UIAccessibilityPostNotification.PageScrolled, new NSString(text));
+        }
     }
 }
