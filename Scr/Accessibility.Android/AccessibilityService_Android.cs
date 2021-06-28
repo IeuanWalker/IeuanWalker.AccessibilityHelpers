@@ -11,8 +11,7 @@ namespace Accessibility.Droid
         public void SetFocus(VisualElement element)
         {
             var view = element.GetViewForAccessibility();
-
-            view?.SendAccessibilityEvent(EventTypes.ViewAccessibilityFocused);
+            view?.SendAccessibilityEvent((EventTypes)(int)WindowsChange.AccessibilityFocused);
         }
 
         public void SetControlType(VisualElement element, ControlType controlType)
